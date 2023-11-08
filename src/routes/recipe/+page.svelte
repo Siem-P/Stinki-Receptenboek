@@ -1,7 +1,7 @@
 <script>
     export let data
 
-    console.log(data.recipes[0])
+    // console.log(data.recipes[0])
 
 </script>
 
@@ -30,6 +30,8 @@
         {:else}
             <p>{recipe.author}</p>
         {/if}
+        
+        <a href="recipe/{recipe.linkSlug}">Detail Pagina</a>
         
     </article>
     
