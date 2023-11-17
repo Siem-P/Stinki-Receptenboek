@@ -10,7 +10,11 @@
 <article>
     <h2>{recipe.recipeName}</h2>
     <p>{recipe.recipeDescription}</p>
-    
+    <ol>
+        {#each recipe.recipeInstructions as instruction}
+        <li>{instruction.recipeInstruction}</li>
+        {/each}
+    </ol>
     <p>{recipe.preparationTime} min</p>
     <p>{recipe.recipeDifficulty} star</p>
     <p>Type keuken</p>
