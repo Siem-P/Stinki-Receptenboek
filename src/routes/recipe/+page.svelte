@@ -6,16 +6,16 @@
 </script>
 
 <h1>Recepten</h1>
-
+<section class="container__recipes">
 {#each data.recipes as recipe}
-    <article>
-        <h2>{recipe.recipeName}</h2>
-        <p>{recipe.recipeDescription}</p>
-        <ul>
+    <article class="recipe">
+        <h2 class="recipe__heading">{recipe.recipeName}</h2>
+        <p class="recipe__description">{recipe.recipeDescription}</p>
+        <!-- <ul>
             {#each recipe.recipeIngredients as ingredients}
                 <li>{ingredients.ingredientName} - {ingredients.amount} {ingredients.unit}</li>
             {/each}
-        </ul>
+        </ul> -->
         <p>{recipe.preparationTime} min</p>
         <p>{recipe.recipeDifficulty} star</p>
         <p>Type keuken</p>
@@ -36,4 +36,31 @@
     </article>
     
 {/each}
+
+</section>
+
+
+
+<style>
+
+.container__recipes {
+    display: flex;
+    
+}
+
+.recipe {
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 1rem;
+    width: 30%;   
+}
+
+.recipe__heading {
+    
+}
+
+
+
+
+</style>
     

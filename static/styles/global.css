@@ -1,4 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+
+:root {
+    --padding-body: 1em;
+}
+
+
+
+body {
+    padding: var(--padding-body);
+}
 
 /* Font ? */
 /* Mansalva - <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@700&family=Mansalva&family=Montserrat:wght@100&display=swap" rel="stylesheet">
